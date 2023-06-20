@@ -1,0 +1,45 @@
+version: '3.4'
+
+services:
+  logger:
+    image: faulycoelho/logger-elasticsearch-kibana
+    build:
+      context: .
+      dockerfile: Logger/Dockerfile
+    networks:
+      - nw
+
+############################
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.11.0 
+    environment:
+      - xpack.security.enabled=false
+      - "discovery.type=single-node"
+    volumes:
+      - v01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - nw
+
+############################
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.11.0
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    ports:
+      - 5601:5601
+    networks:
+      - nw
+
+volumes:
+  v01:
+    driver: local
+
+networks:
+  nw:
+    driver: bridge
