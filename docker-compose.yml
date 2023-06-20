@@ -8,7 +8,9 @@ services:
       dockerfile: Logger/Dockerfile
     networks:
       - nw
-
+    ports:
+      - 8080:80
+      
 ############################
   elasticsearch:
     container_name: elasticsearch
