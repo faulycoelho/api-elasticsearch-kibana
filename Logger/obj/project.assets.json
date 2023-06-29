@@ -1995,11 +1995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\Logger\\Logger\\Logger.csproj",
+      "projectUniqueName": "C:\\dev\\api-elasticsearch-kibana\\Logger\\Logger.csproj",
       "projectName": "Logger",
-      "projectPath": "C:\\dev\\Logger\\Logger\\Logger.csproj",
+      "projectPath": "C:\\dev\\api-elasticsearch-kibana\\Logger\\Logger.csproj",
       "packagesPath": "C:\\Users\\Fauly\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\Logger\\Logger\\obj\\",
+      "outputPath": "C:\\dev\\api-elasticsearch-kibana\\Logger\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "doPSqQc8eq0Vub1xE5GIVSnS34WfWLAtNeAn/vbIFNbxRC90K5Qt1uWi88fOmmBIE3ICc+SwZUi7aIRXp4yrwQ==",
+  "dgSpecHash": "n4/IC5Ch/ZYq2fPRxcSORRfqwGw2iDFyBvoUSxgu6lzDjLpJgTbRFdb7jndJyjSQSKfosY2LNiQqEam9H+uF+w==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Logger\\Logger\\Logger.csproj",
+  "projectFilePath": "C:\\dev\\api-elasticsearch-kibana\\Logger\\Logger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fauly\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
     "C:\\Users\\Fauly\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
